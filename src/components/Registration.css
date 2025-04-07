@@ -1,0 +1,62 @@
+/* Full-page styling for centering */
+.registration-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Form container styling */
+.registration-page form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Adjust width for better layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input fields */
+.registration-page input, 
+.registration-page select {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Adjust focus styles */
+.registration-page input:focus, 
+.registration-page select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.registration-page button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 95%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.registration-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .registration-page form {
+      width: 90%;
+  }
+}
